@@ -2,12 +2,8 @@
 
 function palindrome(str){
  let rev = "";
-      Scanner sc = new Scanner(System.in);
- 
- 
       let length = str.length();
- 
-      for ( let i = length - 1; i >= 0; i-- )
+      for ( let i = length - 1; i >= 0; i-- ){
          rev = rev + str.charAt(i);
  
       if (str.equals(rev)){
@@ -16,7 +12,7 @@ function palindrome(str){
       else{
          return "False";
  
-   }
+   }}
 }
 
 module.exports = palindrome
